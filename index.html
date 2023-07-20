@@ -1,0 +1,945 @@
+<?session_start();?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="skip">
+        <a href="#gnb">메뉴바로가기</a>
+        <a href="#container">콘텐츠바로가기</a>
+    </div>
+    <header id="header">
+        <h1><a href="#"><img src="img/logo.png" alt="Logo"></a></h1>
+        <div class="hamburger"><img src="img/ham_W.png" alt="햄버거버튼"></div>
+        <ul class="icon cf">
+            <li class="search_icon">
+                <a href="javascript:void(0)">
+                    <img class="cross_w" src="img/cross_W.png" alt="닫기 아이콘">
+                    <img class="show" src="img/search_W.png" alt="검색아이콘">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/mypage_W.png" alt="로그인 아이콘">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/shopping_W.png" alt="장바구니아이콘">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="search_box">
+        <div class="search_box1">
+            <div>
+                <p>
+                    <input type="text" id="value" placeholder="검색어를 입력해 주세요.">
+                </p>
+                <p class="s_img">
+                    <a href="javascript:void(0)">
+                        <img src="img/search.png" alt="검색아이콘">
+                    </a>
+                </p>
+            </div>
+            <div class="tag">
+                <p>추천검색어</p>
+                <ul>
+                    <li><a href="page.html"># 베어 워터 쿠션</a></li>
+                    <li><a href="javascript:void(0)"># 누 제로 쿠션</a></li>
+                    <li><a href="javascript:void(0)"># 베어 레이어 팔레트</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascript:void(0)"># 글래스팅 멜팅 밤</a></li>
+                    <li><a href="javascript:void(0)"># 쥬시 래스팅 틴트</a></li>
+                    <li><a href="javascript:void(0)"># 한올 브로우 마스카라</a></li>
+                </ul>
+            </div>
+            <div class="search_cross desktop cf">
+                <p>closed</p>
+                <p><img src="img/up.png" alt="검색창 올리기"></p>
+            </div>
+        </div>
+    </div>
+    <div class="search_back"></div>
+    <div class="modal_back"></div>
+    <nav id="gnb">
+        <ul class="topban">
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/shopping.png" alt="장바구니아이콘">
+                </a>
+            </li>
+            <li class="cross">
+                <a href="javascript:void(0)">
+                    <img src="img/cross.png" alt="닫기아이콘">
+                </a>
+            </li>
+        </ul>
+        <ul class="search cf">
+            <li>
+                <input type="text" required placeholder="Search">
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/search.png" alt="검색아이콘">
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li>
+                <p class="toggle"><a href="list.html">SHOPPING</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">BASE</a></li>
+                <li><a href="javascript:void(0)">EYE</a></li>
+                <li><a href="javascript:void(0)">LIP</a></li>
+                <li><a href="javascript:void(0)">NAIL</a></li>
+                <li><a href="javascript:void(0)">TOOL</a></li>
+                <li><a href="javascript:void(0)">SET</a></li>
+                <li><a href="javascript:void(0)">EDITION</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="javascript:void(0)">EVENT</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                <li><a href="javascript:void(0)">종료된 이벤트</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="review_list.php">REVIEW</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">BEST REVIEW</a></li>
+                <li><a href="javascript:void(0)">PHOTO REVIEW</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="javascript:void(0)">COMMUNITY</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">NOTICE</a></li>
+                <li><a href="javascript:void(0)">룩튜토리얼</a></li>
+                <li><a href="javascript:void(0)">Q&amp;A</a></li>
+                <li><a href="javascript:void(0)">1:1상담</a></li>
+                <li><a href="javascript:void(0)">STORE</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="#">BRAND</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="#">롬앤소식</a></li>
+            </ul>
+        </ul>
+        <ul class="box">
+            <? include "top_login2.php"; ?>
+            <li><a href="javascript:void(0)">배송조회</a></li>
+            <li><a href="javascript:void(0)">Q&amp;A 상품문의</a></li>
+            <li><a href="javascript:void(0)">고객센터 전화연결</a></li>
+        </ul>
+    </nav>
+    <!-- desktop header -->
+    <header id="deskheader" class="desktop">
+        <h2><a href="#"><img src="img/logo.png" alt="logo"></a></h2>
+        <div class="sub1_back"></div>
+        <nav id="dmenu" class="cf">
+            <ul class="navi">
+                <li>
+                    <a href="list.html">SHOPPING</a>
+                    <ul class="sub1 cf">
+                        <li><a href="javascript:void(0)">BASE</a></li>
+                        <li><a href="javascript:void(0)">EYE</a></li>
+                        <li><a href="javascript:void(0)">LIP</a></li>
+                        <li><a href="javascript:void(0)">NAIL</a></li>
+                        <li><a href="javascript:void(0)">TOOL</a></li>
+                        <li><a href="javascript:void(0)">SET</a></li>
+                        <li><a href="javascript:void(0)">EDITION</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">EVENT</a>
+                    <ul class="sub1 cf width1">
+                        <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                        <li><a href="javascript:void(0)">종료된 이벤트</a></li>
+                        <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="review_list.php">REVIEW</a>
+                    <ul class="sub1 cf width1">
+                        <li><a href="javascript:void(0)">BEST REVIEW</a></li>
+                        <li><a href="javascript:void(0)">PHOTO REVIEW</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">COMMUNITY</a>
+                    <ul class="sub1 cf">
+                        <li><a href="javascript:void(0)">NOTICE</a></li>
+                        <li><a href="javascript:void(0)">룩튜토리얼</a></li>
+                        <li><a href="javascript:void(0)">Q&amp;A</a></li>
+                        <li><a href="javascript:void(0)">1:1상담</a></li>
+                        <li><a href="javascript:void(0)">STORE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">BRAND</a>
+                    <ul class="sub1 cf">
+                        <li><a href="javascript:void(0)">롬앤소식</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="search1">
+                <li>
+                    <a href="javascript:void(0)">
+                        <img class="search_pc" src="img/search_W.png" alt="검색아이콘">
+                    </a>
+                </li>
+                <li class="my">
+                    <a href="javascript:void(0)">
+                        <img src="img/mypage_W.png" alt="로그인 아이콘">
+                    </a>
+                    <div class="login">
+                        <? include "top_login1.php"; ?>
+                        <p><a href="javascript:void(0)">My page</a></p> 
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="img/shopping_W.png" alt="장바구니아이콘">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="main1" class="mobile">
+        <div class="slick-slide">
+            <a href="page.html"><img src="img/mm1.jpg" alt="메인이미지1"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/mm2.jpg" alt="메인이미지2"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/mm3.png" alt="메인이미지3"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/mm4.jpg" alt="메인이미지4"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/mm5.jpg" alt="메인이미지5"></a>
+        </div>
+    </section>
+    <section id="main2" class="tablet">
+        <div class="slick-slide">
+            <a href="page.html"><img src="img/tm1.png" alt="메인이미지1"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/tm2.png" alt="메인이미지2"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/tm3.png" alt="메인이미지3"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/tm4.png" alt="메인이미지4"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/tm5.png" alt="메인이미지5"></a>
+        </div>
+    </section>
+    <section id="main3" class="desktop">
+        <div class="slick-slide">
+            <a href="page.html"><img src="img/m1.jpeg" alt="메인이미지1"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/m2.jpeg" alt="메인이미지2"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/m3.jpeg" alt="메인이미지3"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/m4.jpeg" alt="메인이미지4"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/m5.jpeg" alt="메인이미지5"></a>
+        </div>
+    </section>
+    <section id="container">
+        <h3>BEST PRODUCT</h3>
+        <ul class="best aos-item" data-aos="fade-up">
+            <li>
+                <a href="page.html">
+                    <img src="img/b1.jpg" alt="베어 워터 쿠션(+미니쿠션 증정)">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+
+                    <span>베어 워터 쿠션(+미니쿠션 증정)</span>
+                    <span class="txt1">28,000원</span><span class="txt2">26,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b2.jpg" alt="베어 워터 쿠션 리필">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>베어 워터 쿠션 리필</span>
+                    <span class="txt1">17,000원</span><span class="txt2">14,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b16.png" alt="쥬시 래스팅 틴트 #베어쥬시">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>쥬시 래스팅 틴트 #베어쥬시</span>
+                    <span class="txt1">13,000원</span><span class="txt2">8,400원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b15.jpg" alt="쥬시 래스팅 틴트">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>쥬시 래스팅 틴트</span>
+                    <span class="txt1">13,000원</span><span class="txt2">8,400원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b3.jpg" alt="제로 벨벳 틴트#와이너리 벨벳 시리즈">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>제로 벨벳 틴트#와이너리 시리즈</span>
+                    <span class="txt1">13,000원</span><span class="txt2">8,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b5.jpg" alt="듀이플 워터 틴트">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>듀이플 워터 틴트</span>
+                    <span class="txt1">13,000원</span><span class="txt2">9,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b4.jpg" alt="한올 브로우 카라">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>한올 브로우 카라</span>
+                    <span class="txt1">12,000원</span><span class="txt2">8,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b7.png" alt="백미 톤업 쿠션">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>백미 톤업 쿠션</span>
+                    <span class="txt1">18,000원</span><span class="txt2">14,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b8.jpg" alt="백미 노세범 파우더">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>백미 노세범 파우더</span>
+                    <span class="txt1">11,000원</span><span class="txt2">8,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b9.jpg" alt="글래스팅 멜팅 밤#오리지널">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>글래스팅 멜팅 밤#오리지널</span>
+                    <span class="txt1">13,000원</span><span class="txt2">9,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b10.jpg" alt="시스루 베일라이터#하이라이터">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>시스루 베일라이터#하이라이터</span>
+                    <span class="txt1">13,000원</span><span class="txt2">9,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b11.jpg" alt="제로 매트 립스틱">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>제로 매트 립스틱</span>
+                    <span class="txt1">12,000원</span><span class="txt2">8,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b12.jpg" alt="베러 댄 치크 #리뉴얼">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>베러 댄 치크 #리뉴얼</span>
+                    <span class="txt1">12,000원</span><span class="txt2">9,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <img src="img/b13.jpg" alt="무드 페블 네일">
+                    <span>무드 페블 네일</span>
+                    <span class="txt1">8,000원</span><span class="txt2">6,400원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b14.jpg" alt="한올 쉐이드 라이너">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>한올 쉐이드 라이너</span>
+                    <span class="txt1">11,000원</span><span class="txt2">7,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b6.jpg" alt="글래스팅 워터 글로즈">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>글래스팅 워터 글로즈</span>
+                    <span class="txt1">13,000원</span><span class="txt2">8,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b17.png" alt="블러 퍼지 틴트">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>블러 퍼지 틴트</span>
+                    <span class="txt1">13,000원</span><span class="txt2">9,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b18.jpg" alt="베러 댄 팔레트">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>베러 댄 팔레트</span>
+                    <span class="txt1">30,000원</span><span class="txt2">22,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b19.jpg" alt="누 제로 쿠션">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>누 제로 쿠션</span>
+                    <span class="txt1">25,000원</span><span class="txt2">17,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/b20.jpg" alt="한올 픽스 마스카라#톤별래쉬">
+                    <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                    <span>한올 픽스 마스카라#톤별래쉬</span>
+                    <span class="txt1">16,000원</span><span class="txt2">9,900원</span>
+                    <ul class="gif">
+                        <li><img src="img/new.gif" alt="new"></li>
+                        <li><img src="img/hit.gif" alt="hit"></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+        <div class="more">
+            <button>more<img src="img/more.png" alt="more_img"></button>
+        </div>
+    </section>
+    <h3>EVENT</h3>
+    <section class="list mobile">
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/em1.png" alt="이벤트이미지1"></a>
+            <a href="javascript:void(0)"><img src="img/em2.png" alt="이벤트이미지2"></a>
+            <a href="javascript:void(0)"><img src="img/em3.png" alt="이벤트이미지3"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/em4.png" alt="이벤트이미지4"></a>
+            <a href="javascript:void(0)"><img src="img/em5.png" alt="이벤트이미지5"></a>
+            <a href="javascript:void(0)"><img src="img/em6.png" alt="이벤트이미지6"></a>
+        </div>
+        <div class="slick-slide">
+            <a href="javascript:void(0)"><img src="img/em7.png" alt="이벤트이미지7"></a>
+            <a href="javascript:void(0)"><img src="img/em8.png" alt="이벤트이미지8"></a>
+            <a href="javascript:void(0)"><img src="img/em9.png" alt="이벤트이미지9"></a>
+        </div>
+    </section>
+    <section class="list1 tablet desktop">
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et1.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et2.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et3.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et4.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et5.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et6.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et7.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et8.png" alt="이벤트이미지1"></a>
+        </div>
+        <div class="slick-slide gap">
+            <a href="javascript:void(0)"><img src="img/et9.png" alt="이벤트이미지1"></a>
+        </div>
+    </section>
+    <section>
+        <div class="fixd"></div>
+    </section>
+    <h3>rom&nd TV</h3>
+    <section class="list2 mobile">
+        <div class="slick-slide">
+            <div class="videoContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQ9LMAcHzP8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <ul class="text">
+                <li class="txt3">[롬앤 NEW Ve easy #수분충전라인]</li>
+                <li>매마른 일상을 수분으로 채워줄</li>
+                <li>Ve easy #수분충전라인</li>
+            </ul>
+            <div class="list_img">
+                <a href="javascript:void(0)"><img src="img/se1.1.jpg" alt="홍보영상이미지1"></a>
+                <a href="javascript:void(0)"><img src="img/se1.2.jpg" alt="홍보영상이미지2"></a>
+                <a href="javascript:void(0)"><img src="img/se1.3.jpg" alt="홍보영상이미지3"></a>
+                <a href="javascript:void(0)"><img src="img/se1.4.jpg" alt="홍보영상이미지4"></a>
+            </div>
+        </div>
+        <div class="slick-slide">
+            <div class="videoContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b0ZqHH1GLyU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <ul class="text">
+                <li class="txt3">[롬앤 NEW 마이 뉴 베어]</li>
+                <li>한층 더 말갛고 투면해진 베어무드</li>
+                <li>my new BARE</li>
+            </ul>
+            <div class="list_img">
+                <a href="javascript:void(0)"><img src="img/se2.1.jpg" alt="홍보영상이미지1"></a>
+                <a href="javascript:void(0)"><img src="img/se2.2.jpg" alt="홍보영상이미지2"></a>
+                <a href="javascript:void(0)"><img src="img/se2.3.jpg" alt="홍보영상이미지3"></a>
+                <a href="javascript:void(0)"><img src="img/se2.4.jpg" alt="홍보영상이미지4"></a>
+            </div>
+        </div>
+        <div class="slick-slide">
+            <div class="videoContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TZKOZhydPMc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <ul class="text">
+                <li class="txt3">[롬앤 NEW 한올 브로우 카라]</li>
+                <li>한 끗 다른 브로우 터치#디테일카라</li>
+                <li>한올 브로우 카라</li>
+            </ul>
+            <div class="list_img">
+                <a href="javascript:void(0)"><img src="img/se3.1.jpg" alt="홍보영상이미지1"></a>
+                <a href="javascript:void(0)"><img src="img/se3.2.jpg" alt="홍보영상이미지2"></a>
+                <a href="javascript:void(0)"><img src="img/se3.3.jpg" alt="홍보영상이미지3"></a>
+                <a href="javascript:void(0)"><img src="img/se3.4.jpg" alt="홍보영상이미지4"></a>
+            </div>
+        </div>
+        <div class="slick-slide">
+            <div class="videoContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T3nXXZxcmdQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <ul class="text">
+                <li class="txt3">[롬앤 NEW 에너제틱 브라이트]</li>
+                <li>내 일상을 밝혀줄 새로운 컬러</li>
+                <li>Turn on your Energetic Bright</li>
+            </ul>
+            <div class="list_img">
+                <a href="javascript:void(0)"><img src="img/se4.1.jpg" alt="홍보영상이미지1"></a>
+                <a href="javascript:void(0)"><img src="img/se4.2.jpg" alt="홍보영상이미지2"></a>
+                <a href="javascript:void(0)"><img src="img/se4.3.jpg" alt="홍보영상이미지3"></a>
+                <a href="javascript:void(0)"><img src="img/se4.4.jpg" alt="홍보영상이미지4"></a>
+            </div>
+        </div>
+        <div class="slick-slide">
+            <div class="videoContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oYpGN8yFhNk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <ul class="text">
+                <li class="txt3">[NEW 한올라인]</li>
+                <li>설레는 순간, 잊혀지지 않는 눈빛</li>
+                <li>#기억카라</li>
+            </ul>
+            <div class="list_img">
+                <a href="javascript:void(0)"><img src="img/se5.1.jpg" alt="홍보영상이미지1"></a>
+                <a href="javascript:void(0)"><img src="img/se5.2.jpg" alt="홍보영상이미지2"></a>
+                <a href="javascript:void(0)"><img src="img/se5.3.jpg" alt="홍보영상이미지3"></a>
+                <a href="javascript:void(0)"><img src="img/se5.4.jpg" alt="홍보영상이미지4"></a>
+            </div>
+        </div>
+    </section>
+    <!-- tablet desktop -->
+    <section class="list3 tablet desktop">
+        <div class="slick-slide">
+            <ul class="text1">
+                <li class="txt3">[롬앤 NEW Ve easy #수분충전라인]</li>
+                <li>매마른 일상을 수분으로 채워줄</li>
+                <li>Ve easy #수분충전라인</li>
+            </ul>
+            <ul class="list3_1">
+                <li class="videoContainer1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQ9LMAcHzP8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="list_img1">
+                    <a href="javascript:void(0)"><img src="img/se1.1.jpg" alt="홍보영상이미지1"></a>
+                    <a href="javascript:void(0)"><img src="img/se1.2.jpg" alt="홍보영상이미지2"></a>
+                    <a href="javascript:void(0)"><img src="img/se1.3.jpg" alt="홍보영상이미지3"></a>
+                    <a href="javascript:void(0)"><img src="img/se1.4.jpg" alt="홍보영상이미지4"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="slick-slide">
+            <ul class="text1">
+                <li class="txt3">[롬앤 NEW 마이 뉴 베어]</li>
+                <li>한층 더 말갛고 투면해진 베어무드</li>
+                <li>my new BARE</li>
+            </ul>
+            <ul class="list3_1">
+                <li class="videoContainer1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b0ZqHH1GLyU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="list_img1">
+                    <a href="javascript:void(0)"><img src="img/se2.1.jpg" alt="홍보영상이미지1"></a>
+                    <a href="javascript:void(0)"><img src="img/se2.2.jpg" alt="홍보영상이미지2"></a>
+                    <a href="javascript:void(0)"><img src="img/se2.3.jpg" alt="홍보영상이미지3"></a>
+                    <a href="javascript:void(0)"><img src="img/se2.4.jpg" alt="홍보영상이미지4"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="slick-slide">
+            <ul class="text1">
+                <li class="txt3">[롬앤 NEW 한올 브로우 카라]</li>
+                <li>한 끗 다른 브로우 터치#디테일카라</li>
+                <li>한올 브로우 카라</li>
+            </ul>
+            <ul class="list3_1">
+                <li class="videoContainer1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZKOZhydPMc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="list_img1">
+                    <a href="javascript:void(0)"><img src="img/se3.1.jpg" alt="홍보영상이미지1"></a>
+                    <a href="javascript:void(0)"><img src="img/se3.2.jpg" alt="홍보영상이미지2"></a>
+                    <a href="javascript:void(0)"><img src="img/se3.3.jpg" alt="홍보영상이미지3"></a>
+                    <a href="javascript:void(0)"><img src="img/se3.4.jpg" alt="홍보영상이미지4"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="slick-slide">
+            <ul class="text1">
+                <li class="txt3">[롬앤 NEW 에너제틱 브라이트]</li>
+                <li>내 일상을 밝혀줄 새로운 컬러</li>
+                <li>Turn on your Energetic Bright</li>
+            </ul>
+            <ul class="list3_1">
+                <li class="videoContainer1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T3nXXZxcmdQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="list_img1">
+                    <a href="javascript:void(0)"><img src="img/se4.1.jpg" alt="홍보영상이미지1"></a>
+                    <a href="javascript:void(0)"><img src="img/se4.2.jpg" alt="홍보영상이미지2"></a>
+                    <a href="javascript:void(0)"><img src="img/se4.3.jpg" alt="홍보영상이미지3"></a>
+                    <a href="javascript:void(0)"><img src="img/se4.4.jpg" alt="홍보영상이미지4"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="slick-slide">
+            <ul class="text1">
+                <li class="txt3">[NEW 한올라인]</li>
+                <li>설레는 순간, 잊혀지지 않는 눈빛</li>
+                <li>#기억카라</li>
+            </ul>
+            <ul class="list3_1">
+                <li class="videoContainer1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oYpGN8yFhNk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="list_img1">
+                    <a href="javascript:void(0)"><img src="img/se5.1.jpg" alt="홍보영상이미지1"></a>
+                    <a href="javascript:void(0)"><img src="img/se5.2.jpg" alt="홍보영상이미지2"></a>
+                    <a href="javascript:void(0)"><img src="img/se5.3.jpg" alt="홍보영상이미지3"></a>
+                    <a href="javascript:void(0)"><img src="img/se5.4.jpg" alt="홍보영상이미지4"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="project tablet desktop">
+        <a href="javascript:void(0)">
+            <img src="img/project_img.png" alt="project img">
+            <div class="project_text delay-05s">
+                <p>케미 프로젝트 [Chemi Project] :</p>
+                <span>소비자에게 받은 사랑을 돌려드리기 위한<br>
+                    롬앤의 사회 후원 프로젝트<br>
+                    자립 준비 쳥년과 롬앤, 개코<br>
+                    그리고 소비자분들이 함께 만들어 갑니다.</span>
+            </div>
+        </a>
+    </section>
+    <h3>rom&nd ARCHIVING</h3>
+    <section class="list4 list5">
+        <ul class="list4_img list5_img">
+            <li><a href="javascript:void(0)"><img src="img/a1.jpg" alt="archiving이미지1"></a></li>
+            <li><a href="javascript:void(0)"><img src="img/a2.jpg" alt="archiving이미지2"></a></li>
+            <li><a href="javascript:void(0)"><img src="img/a3.jpg" alt="archiving이미지3"></a></li>
+        </ul>
+    </section>
+    <div class="top">
+        <a href="#">
+            <img src="img/top.png" alt="상단으로 이동">
+        </a>
+    </div>
+    <footer id="footer" class="mobile">
+        <div class="foot1">
+            <a href="https://www.instagram.com/romandyou/"><img src="img/sns_i_B.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/romandyou"><img src="img/sns_f_B.png" alt="facebook"></a>
+            <a href="https://blog.naver.com/romandyou"><img src="img/sns_b_B.png" alt="blog"></a>
+            <a href="https://www.youtube.com/channel/UC2uKY1XseEBI5Gorsy2DRZg"><img src="img/sns_y_B.png"
+                    alt="youtube"></a>
+            <li><a href="https://pf.kakao.com/_RzWSu"><img src="img/sns_k_B.png" alt="kakao"></a></li>
+        </div>
+        <p class="foot2">
+            <img src="img/foot_m.png" alt="foot LOGO">
+        </p>
+        <div class="foot3">
+            <ul>
+                <li>롬앤 고객센터</li>
+                <li>1670-2238</li>
+            </ul>
+            <ul>
+                <li>Mon-Fri. 10:00 ~ 17:00</li>
+                <li>Lunch. 12:00 ~ 13:30</li>
+                <li>토,일 공휴일 휴무</li>
+            </ul>
+        </div>
+        <div class="foot4">
+            <span>대표자 김태욱,김성현</span><span>대표전화 1670-2238 ㅣ 개인정보관리책임 허지혜</span><span>주소 서울특별시 송파구 동남로 122 (문정동) COLLECTED
+                빌딩</span><span>사업자등록번호 120-86-00633 ㅣ 통신판매업신고 제2022-서울송파-1690호</span>
+        </div>
+        <div class="foot5">
+            <span>신한은행 140-008-192572</span><span>예금주 (주)아이패밀리에스씨</span>
+        </div>
+        <div class="foot6">
+            <ul>
+                <? include "top_login2.php"; ?>
+                <li><a href="javascript:void(0)">PC 버전</a></li>
+            </ul>
+        </div>
+        <div class="foot7">
+            <ul>
+                <li><a href="javascript:void(0)">회사소개</a></li>
+                <li><a href="javascript:void(0)">쇼핑가이드</a></li>
+                <li><a href="javascript:void(0)">개인정보 보호정책</a></li>
+                <li><a href="javascript:void(0)">이용약관동의</a></li>
+            </ul>
+        </div>
+        <div class="foot8">
+            Copyright © 2017 rom&nd. All rights reserved.
+        </div>
+    </footer>
+
+    <footer id="pcfoot" class="tablet desktop">
+        <div class="pcfoot1">
+            <p class="pcfoot1_1">
+                <img src="img/foot logo.png" alt="foot LOGO">
+            </p>
+            <p>
+                <a href="mailto:romandyou@romand.co.kr">
+                    <img src="img/marketing.png" alt="marketing">
+                </a>
+            </p>
+            <p>
+                <a href="mailto:export@romand.co.kr">
+                    <img src="img/rmd_footer_store.jpg" alt="store">
+                </a>
+            </p>
+            <p>
+                <a href="https://romand.co.kr/board/gallery/list.html?board_no=25">
+                    <img src="img/rmd_footer_benefit.jpg" alt="benefit">
+                </a>
+            </p>
+            <p>
+                <a href="https://romand.co.kr/product/project.html?cate_no=80">
+                    <img src="img/global_expert.png" alt="global">
+                </a>
+            </p>
+
+        </div>
+        <div class="pcfoot2">
+            <div class="pcfoot2_1">
+                <ul class="foot_left">
+                    <li>
+                        <a href="#">
+                            <img src="img/foot1.jpg" alt="foot logo">
+                        </a>
+                    </li>
+                    <ul class="foot_sns cf">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC2uKY1XseEBI5Gorsy2DRZg"><img src="img/sns y.png"
+                                    alt="youtube"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/romandyou/"><img src="img/sns i.jpg" alt="instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/romandyou"><img src="img/sns b.jpg" alt="blog"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/romandyou"><img src="img/sns f.jpg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://pf.kakao.com/_RzWSu"><img src="img/sns k.jpg" alt="kakao"></a>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="foot_right">
+                    <p class="txt4">(주)아이패밀리SC</p>
+                    <span>서울특별시 송파구 동남로 122(문정동)COLLECTED 빌딩 Tel : 02. 1670. 2238 <br>통신판매신고번호 : 제2022-서울송파-1690호 대표자 :
+                        김태욱,김성현</span>
+                    <ul>
+                        <li><a href="javascript:void(0)">개인정보보호정책</a></li>
+                        <li><a href="javascript:void(0)">이용약관동의</a></li>
+                    </ul>
+                    <span>© 2017 IFAMILY SC, CO.,LTD.ALL Right Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="quick_fixed">
+        <p><a href="javascript:void(0)"><img src="img/qucik.png" alt="qucik_banner"></a></p>
+    </div>
+
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+</body>
+
+</html>

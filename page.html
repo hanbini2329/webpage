@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/page.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="index.html"><img src="img/logo.png" alt="Logo"></a></h1>
+        <div class="hamburger"><img src="img/ham_W.png" alt="햄버거버튼"></div>
+        <ul class="icon cf">
+            <li class="search_icon">
+                <a href="javascript:void(0)">
+                    <img class="cross_w" src="img/cross_W.png" alt="닫기 아이콘">
+                    <img class="show" src="img/search_W.png" alt="검색아이콘">
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <img src="img/mypage_W.png" alt="로그인 아이콘">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/shopping_W.png" alt="장바구니아이콘">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="search_box">
+        <div class="search_box1">
+            <div>
+                <p>
+                    <input type="text" id="value" placeholder="검색어를 입력해 주세요.">
+                </p>
+                <p class="s_img">
+                    <a href="javascript:void(0)">
+                        <img src="img/search.png" alt="검색아이콘">
+                    </a>
+                </p>
+            </div>
+            <div class="tag">
+                <p>추천검색어</p>
+                <ul>
+                    <li><a href="page.html"># 베어 워터 쿠션</a></li>
+                    <li><a href="javascript:void(0)"># 누 제로 쿠션</a></li>
+                    <li><a href="javascript:void(0)"># 베어 레이어 팔레트</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascript:void(0)"># 글래스팅 멜팅 밤</a></li>
+                    <li><a href="javascript:void(0)"># 쥬시 래스팅 틴트</a></li>
+                    <li><a href="javascript:void(0)"># 한올 브로우 마스카라</a></li>
+                </ul>
+            </div>
+            <div class="search_cross desktop cf">
+                <p>closed</p>
+                <p><img src="img/up.png" alt="검색창 올리기"></p>
+            </div>
+        </div>
+    </div>
+    <div class="search_back"></div>
+    <div class="modal_back"></div>
+    <nav id="gnb">
+        <ul class="topban">
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/shopping.png" alt="장바구니아이콘">
+                </a>
+            </li>
+            <li class="cross">
+                <a href="javascript:void(0)">
+                    <img src="img/cross.png" alt="닫기아이콘">
+                </a>
+            </li>
+        </ul>
+        <ul class="search cf">
+            <li>
+                <input type="text" required placeholder="Search">
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="img/search.png" alt="검색아이콘">
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li>
+                <p class="toggle"><a href="list.html">SHOPPING</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">BASE</a></li>
+                <li><a href="javascript:void(0)">EYE</a></li>
+                <li><a href="javascript:void(0)">LIP</a></li>
+                <li><a href="javascript:void(0)">NAIL</a></li>
+                <li><a href="javascript:void(0)">TOOL</a></li>
+                <li><a href="javascript:void(0)">SET</a></li>
+                <li><a href="javascript:void(0)">EDITION</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="javascript:void(0)">EVENT</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                <li><a href="javascript:void(0)">종료된 이벤트</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="review_list.php">REVIEW</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">BEST REVIEW</a></li>
+                <li><a href="javascript:void(0)">PHOTO REVIEW</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="javascript:void(0)">COMMUNITY</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="javascript:void(0)">NOTICE</a></li>
+                <li><a href="javascript:void(0)">룩튜토리얼</a></li>
+                <li><a href="javascript:void(0)">Q&amp;A</a></li>
+                <li><a href="javascript:void(0)">1:1상담</a></li>
+                <li><a href="javascript:void(0)">STORE</a></li>
+            </ul>
+            <li>
+                <p class="toggle"><a href="#">BRAND</a><span></span></p>
+            </li>
+            <ul class="sub">
+                <li><a href="#">롬앤소식</a></li>
+            </ul>
+        </ul>
+        <ul class="box">
+            <? include "top_login2.php"; ?>
+            <li><a href="javascript:void(0)">배송조회</a></li>
+            <li><a href="javascript:void(0)">Q&amp;A 상품문의</a></li>
+            <li><a href="javascript:void(0)">고객센터 전화연결</a></li>
+        </ul>
+    </nav>
+    <!-- desktop header -->
+    <header id="deskheader" class="desktop">
+        <h2><a href="index.html"><img src="img/logo.png" alt="logo"></a></h2>
+        <div class="sub1_back"></div>
+        <nav id="dmenu" class="cf">
+            <ul class="navi">
+                <li>
+                    <a href="list.html">SHOPPING</a>
+                    <ul class="sub1 cf">
+                        <li><a href="javascript:void(0)">BASE</a></li>
+                        <li><a href="javascript:void(0)">EYE</a></li>
+                        <li><a href="javascript:void(0)">LIP</a></li>
+                        <li><a href="javascript:void(0)">NAIL</a></li>
+                        <li><a href="javascript:void(0)">TOOL</a></li>
+                        <li><a href="javascript:void(0)">SET</a></li>
+                        <li><a href="javascript:void(0)">EDITION</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">EVENT</a>
+                    <ul class="sub1 cf width1">
+                        <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                        <li><a href="javascript:void(0)">종료된 이벤트</a></li>
+                        <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="review_list.php">REVIEW</a>
+                    <ul class="sub1 cf width1">
+                        <li><a href="javascript:void(0)">BEST REVIEW</a></li>
+                        <li><a href="javascript:void(0)">PHOTO REVIEW</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">COMMUNITY</a>
+                    <ul class="sub1 cf">
+                        <li><a href="javascript:void(0)">NOTICE</a></li>
+                        <li><a href="javascript:void(0)">룩튜토리얼</a></li>
+                        <li><a href="javascript:void(0)">Q&amp;A</a></li>
+                        <li><a href="javascript:void(0)">1:1상담</a></li>
+                        <li><a href="javascript:void(0)">STORE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">BRAND</a>
+                    <ul class="sub1 cf">
+                        <li><a href="javascript:void(0)">롬앤소식</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="search1">
+                <li>
+                    <a href="javascript:void(0)">
+                        <img class="search_pc" src="img/search_W.png" alt="검색아이콘">
+                    </a>
+                </li>
+                <li class="my">
+                    <a href="javascript:void(0)">
+                        <img src="img/mypage_W.png" alt="로그인 아이콘">
+                    </a>
+                    <div class="login">
+                        <? include "top_login1.php"; ?>
+                        <p><a href="javascript:void(0)">My page</a></p> 
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="img/shopping_W.png" alt="장바구니아이콘">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="desktop_main">
+        <!-- Swiper -->
+        <div id="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/bare_m1.png" alt="bare쿠션 img1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bare_m2.jpg" alt="bare쿠션 img2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bare_m3.jpg" alt="bare쿠션 img3">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <section class="container">
+            <div class="container_box">
+                <h3>베어 워터 쿠션(+미니쿠션 증정)</h3>
+                <ul class="icon2">
+                    <li class="wish"><a href="javascript:void(0)"><img src="img/heart.png" alt="관심상품등록"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/share.png" alt="공유버튼"></a></li>
+                </ul>
+            </div>
+            <ul class="container_txt">
+                <li>소비자가</li>
+                <li>28,000원</span></li>
+                <li>판매가</li>
+                <li>26,900원</li>
+                <li>상품코드</li>
+                <li>P00000ZE</li>
+            </ul>
+            <ul class="star">
+                <li><img src="img/star.png" alt="star"></li>
+                <li><img src="img/star.png" alt="star"></li>
+                <li><img src="img/star.png" alt="star"></li>
+                <li><img src="img/star.png" alt="star"></li>
+                <li><img src="img/star_half.png" alt="star"></li>
+                <li><a href="javascript:void(0)">리뷰보기</a></li>
+            </ul>
+            <div class="select">
+                <select>
+                    <option value="- [필수] 옵션을 선택해주세요 -">- [필수] 옵션을 선택해주세요 -</option>
+                    <option value="01 포슬린 17 (+미니쿠션 증정)">01 포슬린 17 (+미니쿠션 증정) -</option>
+                    <option value="02 퓨어 21 (+미니쿠션 증정)">02 퓨어 21 (+미니쿠션 증정)</option>
+                    <option value="03 내추럴 21 (+미니쿠션 증정)">03 내추럴 21 (+미니쿠션 증정)</option>
+                    <option value="04 베이지 23 (+미니쿠션 증정)">04 베이지 23 (+미니쿠션 증정)</option>
+                    <option value="05 샌드 25 (+미니쿠션 증정)">05 샌드 25 (+미니쿠션 증정)</option>
+                    <option value="01 포슬린 17 리필 (-12,000원)">01 포슬린 17 리필 (-12,000원)</option>
+                    <option value="02 퓨어 21 리필 (-12,000원)">02 퓨어 21 리필 (-12,000원)</option>
+                    <option value="03 내추럴 21 리필 (-12,000원)">03 내추럴 21 리필 (-12,000원)</option>
+                    <option value="04 베이지 23 리필 (-12,000원)">04 베이지 23 리필 (-12,000원)</option>
+                    <option value="05 샌드 25 리필 (-12,000원)">05 샌드 25 리필 (-12,000원)</option>
+                </select>
+            </div>
+            <div class="total">
+                <p>TOTAL</p>
+                <p>￦ 0</p>
+            </div>
+            <div class="box1">
+                <p><a href="javascript:void(0)"><img src="img/shopping.png" alt="장바구니"></a></p>
+                <button>구매하기</button>
+            </div>
+        </section>
+    </div>
+    <div class="tab_box">
+        <ul class="button_box">
+            <li class="button_on"><a href="#list_box">상세정보</a></li>
+            <li><a href="#delivery">상품구매안내</a></li>
+            <li><a href="#review">상품리뷰</a></li>
+            <li><a href="#wrap">관련상품</a></li>
+        </ul>
+    </div>
+    <div class="tab_box_pc desktop">
+        <ul class="button_box">
+            <li class="button_on"><a href="#list_box">상세정보</a></li>
+            <li><a href="#delivery">상품구매안내</a></li>
+            <li><a href="#review">상품리뷰</a></li>
+            <li><a href="#wrap">관련상품</a></li>
+        </ul>
+    </div>
+    <div id="contents">
+        <section class="list_img">
+            <ul>
+                <li id="list_box"><img src="img/bare_p1.png" alt="상세정보 이미지1"></li>
+                <li><img src="img/bare_p2.jpg" alt="상세정보 이미지2"></li>
+                <li><img src="img/bare_p3.gif" alt="상세정보 이미지3"></li>
+                <li><img src="img/bare_p4.jpg" alt="상세정보 이미지4"></li>
+                <li><img src="img/bare_p5.gif" alt="상세정보 이미지5"></li>
+                <li><img src="img/bare_p6.jpg" alt="상세정보 이미지6"></li>
+                <li><img src="img/bare_p7.gif" alt="상세정보 이미지7"></li>
+                <li><img src="img/bare_p8.jpg" alt="상세정보 이미지8"></li>
+                <li><img src="img/bare_p9.gif" alt="상세정보 이미지9"></li>
+                <li><img src="img/bare_p10.jpg" alt="상세정보 이미지10"></li>
+                <li><img src="img/bare_p11.gif" alt="상세정보 이미지11"></li>
+                <li><img src="img/bare_p12.jpg" alt="상세정보 이미지12"></li>
+                <li><img src="img/bare_p13.jpg" alt="상세정보 이미지13"></li>
+                <li><img src="img/bare_p14.gif" alt="상세정보 이미지14"></li>
+                <li><img src="img/bare_p15.jpg" alt="상세정보 이미지15"></li>
+                <li><img src="img/bare_p16.gif" alt="상세정보 이미지16"></li>
+                <li><img src="img/bare_p17.jpg" alt="상세정보 이미지17"></li>
+                <li><img src="img/bare_p18.gif" alt="상세정보 이미지18"></li>
+                <li><img src="img/bare_p19.jpg" alt="상세정보 이미지19"></li>
+                <li><img src="img/bare_p20.jpg" alt="상세정보 이미지20"></li>
+                <li><img src="img/bare_p21.jpg" alt="상세정보 이미지21"></li>
+                <li><img src="img/bare_p22.jpg" alt="상세정보 이미지22"></li>
+            </ul>
+        </section>
+        <section id="delivery">
+            <h3>상품구매안내</h3>
+            <div class="delivery_img">
+                <p class="mobile tablet"><img src="img/bare_p23.jpg" alt="상품구매안내"></p>
+                <p class="desktop"><img src="img/bare_p23_pc.png" alt="상품구매안내"></p>
+            </div>
+        </section>
+        <section id="review">
+            <h3>REVIEW</h3>
+            <div class="review_box">
+                <button>리뷰 작성하기</button>
+                <ul class="review_star">
+                    <li>4.6</li>
+                    <li><img src="img/star.png" alt="star"></li>
+                    <li><img src="img/star.png" alt="star"></li>
+                    <li><img src="img/star.png" alt="star"></li>
+                    <li><img src="img/star.png" alt="star"></li>
+                    <li><img src="img/star_half.png" alt="star"></li>
+                    <li>842 Reviews</li>
+                </ul>
+                <ul class="review_box1">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r1.jpg" alt="리뷰이미지1">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>네</li>
+                                        <li>네이버 페이 구매자</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-11-25</p>
+                                </div>
+                                <p class="mobile tablet">
+                                    엄청 촉촉하고 시원한데 유지가 잘돼요 되게 가볍고! 만졌을때 두껍게 화장한 느낌이 아니라 수분크림 바른 정도? 넘
+                                    좋아서 리필포함으로 또 살거에요
+                                    지성인데도...
+                                </p>
+                                <p class="desktop">
+                                    엄청 촉촉하고 시원한데 유지가 잘돼요 되게 가볍고! 만졌을때 두껍게 화장한 느낌이 아니라 수분크림 바른 정도? 넘 좋아서
+                                    리필포함으로 또 살거에요
+                                    지성인데도 사용감 좋아요대신 한번 바르면 진짜 안바른것처럼 커버력이없어서 두번정도 레이어링해야 돼요 그리고 첨에 개봉했을때 매쉬망에 좀 불규칙하게
+                                    묻어있었어요 그치만...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r2.jpg" alt="리뷰이미지2">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>w</li>
+                                        <li>woor***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p class="mobile tablet">
+                                    우선 최근에 나온 롬앤 쿠션중에 제일 만족합니다 ! 요새 날씨도 건조해서 워터베이스의 쿠션을 찾았는데 딱이에요 메쉬으로 들어있는 모든 브랜드 쿠션중에서
+                                    제일 ...
+                                </p>
+                                <p class="desktop">
+                                    우선 최근에 나온 롬앤 쿠션중에 제일 만족합니다 ! 요새 날씨도 건조해서 워터베이스의 쿠션을 찾았는데 딱이에요 메쉬으로 들어있는 모든 브랜드 쿠션중에서
+                                    제일 꿀렁거려요 ㅋㅋㅋ 잘 안 묻어 나는거 같은데 덕분에 저는 양조절되서 좋더라구여 워터베이스라 정말 촉촉하고 깨끗하게 발려요 얇게 레이어드 해도
+                                    떡지거나 두꺼운 느낌이 ...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r3.jpg" alt="리뷰이미지3">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>2</li>
+                                        <li>254436510***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p class="mobile tablet">
+                                    롬앤 베어 워터 쿠션이 그렇게 광이 잘 난다는 소문 듣고 출시하자마자 구매했어요! 소문대로 광이 너무 나서 회사 직원들도 화장이 바뀐 걸 알아볼
+                                    정도였어요 ㅎㅎ ...
+                                </p>
+                                <p class="desktop">
+                                    롬앤 베어 워터 쿠션이 그렇게 광이 잘 난다는 소문 듣고 출시하자마자 구매했어요! 소문대로 광이 너무 나서 회사 직원들도 화장이 바뀐 걸 알아볼
+                                    정도였어요 ㅎㅎ 색상도 만족하고 촉촉하고 향도 좋아서 겨울에 너무 쓰기 좋아용 커버력은 없긴 한데, 아침엔 파데로 바르고 수정용으로 써도 좋더라구요!
+                                    요즘 광채 화장이 유행이라 써보는...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r4.jpg" alt="리뷰이미지4">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>2</li>
+                                        <li>254473744***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p class="mobile tablet">
+                                    롬앤쿠션 엄마꺼 한개 제꺼한개 구매했는데헐 이게 뭥미...;; 출근하기전부터 바르고나서퇴근할때까지 수정화장하지도
+                                    않했는데도무너짐도 진짜거의없고 쿠션들은
+                                    ...
+                                </p>
+                                <p class="desktop">
+                                    롬앤쿠션 엄마꺼 한개 제꺼한개 구매했는데헐 이게 뭥미...;; 출근하기전부터 바르고나서퇴근할때까지 수정화장하지도 않했는데도무너짐도 진짜거의없고 쿠션들은
+                                    속건조심할때가 많던데 속건조도 없고 촉촉했습니다. 참고로 저랑 엄마는 민감한피부이자 아주건조한 피부입니다. 엄마도 완전 만족하셔서 넘 좋고 저두 여태껏
+                                    쓴쿠션중...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tablet desktop">
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r5.jpg" alt="리뷰이미지5">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>2</li>
+                                        <li>254540161***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p class="tablet">
+                                    유튜브에서 아주 칭찬을 그득그득하길래 뭐 어떻길래 저렇나 싶어서 사봤는데 와... 완전 내가 찾던 쿠션인데요?? 촉촉한데
+                                    지속력도 꽤나 길어요. 그...
+                                </p>
+                                <p class="desktop">
+                                    유튜브에서 아주 칭찬을 그득그득하길래 뭐 어떻길래 저렇나 싶어서 사봤는데 와... 완전 내가 찾던 쿠션인데요?? 촉촉한데 지속력도 꽤나 길어요. 그리고
+                                    수정화장하기도 편하고 기존의 쿠션이랑은 다른 질감? 의 쿠션이라 퍼프에 묻히는 재미도 있네요 ㅋㅋ 일단 외관도 너무 예쁘고 색상도 선택할 수 있어서
+                                    좋네요. 저는 퓨어 하나 ...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tablet desktop">
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r6.jpg" alt="리뷰이미지6">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>2</li>
+                                        <li>254473744***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p class="tablet">
+                                    일단 써보신분은 모두 아시겠지만 피부가너무 예쁘게 표현 된답니다.촉촉하고 무너짐도 없고 지소력도 오래 간답니다.건조하고 민감한
+                                    피부인...
+                                </p>
+                                <p class="desktop">
+                                    일단 써보신분은 모두 아시겠지만 피부가너무 예쁘게 표현 된답니다.촉촉하고 무너짐도 없고 지소력도 오래 간답니다.건조하고 민감한 피부인지라 다른 쿠션들
+                                    바를때는시간이 지나면 속건조가 심하고 땡길때도 있고그래서인지 무너짐도 심하고 피부가 지저분하게보일때도 많았습니다. 근데 롬앤 베어워터 쿠션은진짜
+                                    당가는것도없고 ...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="desktop">
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r7.jpg" alt="리뷰이미지7">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>1</li>
+                                        <li>147518243***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p>
+                                    커버력은 낮지만, 정말 촉촉하고 광이 미쳤슴니당..건성페부인데 이렇게 촉촉한 쿠션은 처음사봐요💜역시롬앤.. 너무조하용 ^^ 퓨어21. 네츄럴21 모두
+                                    잘
+                                    맞아요! 기존 누제로쿠션은 건성인 저에게 꽤 건조하더라구요 이번쿠션이 저는 훨씬 마음에듭니당💙</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="desktop">
+                        <a href="javascript:void(0)">
+                            <img src="img/bare_r6.jpg" alt="리뷰이미지6">
+                            <div class="review_list">
+                                <div class="list_box">
+                                    <ul class="user">
+                                        <li>2</li>
+                                        <li>255455696***</li>
+                                        <li>
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </li>
+                                    </ul>
+                                    <p class="fix">2022-12-01</p>
+                                </div>
+                                <p>
+                                    36년살면서ㅜㅜ이렇게 내마음에 쏙 드는 쿠션 처음입니당!어쩜 이렇게 촉촉하게 뭉침없이 피부에 챡챡 붙는지촉촉함도 오래!!굿!!!아 참고사항으로는
+                                    잡티커버
+                                    100%는 안되요.쿠션바르고 위에 컨실러 톡톡 바름 끝장납니다^--^피부에 은은한 광채가 싼티나보이지 않게 고급져보여요.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="r_more">
+                    <li><a href="javascript:void(0)"><img src="img/arrow_prev.png" alt=""></a></li>
+                    <ul class="num">
+                        <li class="num_on"><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                    </ul>
+                    <li><a href="javascript:void(0)"><img src="img/arrow_next.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="wrap">
+            <h3>RELATED ITEM</h3>
+            <ul class="best">
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="img/b2.jpg" alt="베어 워터 쿠션 리필">
+                        <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                        <span>베어 워터 쿠션 리필</span>
+                        <span class="txt1">17,000원</span><span class="txt2">14,900원</span>
+                        <ul class="gif">
+                            <li><img src="img/new.gif" alt="new"></li>
+                            <li><img src="img/hit.gif" alt="hit"></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="img/b7.png" alt="백미 톤업 쿠션">
+                        <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                        <span>백미 톤업 쿠션</span>
+                        <span class="txt1">18,000원</span><span class="txt2">14,900원</span>
+                        <ul class="gif">
+                            <li><img src="img/new.gif" alt="new"></li>
+                            <li><img src="img/hit.gif" alt="hit"></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="tablet desktop">
+                    <a href="javascript:void(0)">
+                        <img src="img/b8.jpg" alt="백미 노세범 파우더">
+                        <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                        <span>백미 노세범 파우더</span>
+                        <span class="txt1">11,000원</span><span class="txt2">8,900원</span>
+                        <ul class="gif">
+                            <li><img src="img/new.gif" alt="new"></li>
+                            <li><img src="img/hit.gif" alt="hit"></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="desktop">
+                    <a href="javascript:void(0)">
+                        <img src="img/b19.jpg" alt="누 제로 쿠션">
+                        <div class="wish"><img src="img/heart.png" alt="관심상품등록"></div>
+                        <span>누 제로 쿠션</span>
+                        <span class="txt1">25,000원</span><span class="txt2">17,900원</span>
+                        <ul class="gif">
+                            <li><img src="img/new.gif" alt="new"></li>
+                            <li><img src="img/hit.gif" alt="hit"></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="top">
+        <a href="#">
+            <img src="img/top.png" alt="상단으로 이동">
+        </a>
+    </div>
+    <footer id="footer" class="mobile">
+        <div class="foot1">
+            <a href="https://www.instagram.com/romandyou/"><img src="img/sns_i_B.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/romandyou"><img src="img/sns_f_B.png" alt="facebook"></a>
+            <a href="https://blog.naver.com/romandyou"><img src="img/sns_b_B.png" alt="blog"></a>
+            <a href="https://www.youtube.com/channel/UC2uKY1XseEBI5Gorsy2DRZg"><img src="img/sns_y_B.png"
+                    alt="youtube"></a>
+            <li><a href="https://pf.kakao.com/_RzWSu"><img src="img/sns_k_B.png" alt="kakao"></a></li>
+        </div>
+        <p class="foot2">
+            <img src="img/foot_m.png" alt="foot LOGO">
+        </p>
+        <div class="foot3">
+            <ul>
+                <li>롬앤 고객센터</li>
+                <li>1670-2238</li>
+            </ul>
+            <ul>
+                <li>Mon-Fri. 10:00 ~ 17:00</li>
+                <li>Lunch. 12:00 ~ 13:30</li>
+                <li>토,일 공휴일 휴무</li>
+            </ul>
+        </div>
+        <div class="foot4">
+            <span>대표자 김태욱,김성현</span><span>대표전화 1670-2238 ㅣ 개인정보관리책임 허지혜</span><span>주소 서울특별시 송파구 동남로 122 (문정동) COLLECTED
+                빌딩</span><span>사업자등록번호 120-86-00633 ㅣ 통신판매업신고 제2022-서울송파-1690호</span>
+        </div>
+        <div class="foot5">
+            <span>신한은행 140-008-192572</span><span>예금주 (주)아이패밀리에스씨</span>
+        </div>
+        <div class="foot6">
+            <ul>
+                <? include "top_login2.php"; ?>
+                <li><a href="javascript:void(0)">PC 버전</a></li>
+            </ul>
+        </div>
+        <div class="foot7">
+            <ul>
+                <li><a href="javascript:void(0)">회사소개</a></li>
+                <li><a href="javascript:void(0)">쇼핑가이드</a></li>
+                <li><a href="javascript:void(0)">개인정보 보호정책</a></li>
+                <li><a href="javascript:void(0)">이용약관동의</a></li>
+            </ul>
+        </div>
+        <div class="foot8">
+            Copyright © 2017 rom&nd. All rights reserved.
+        </div>
+    </footer>
+
+    <footer id="pcfoot" class="tablet desktop">
+        <div class="pcfoot1">
+            <p class="pcfoot1_1">
+                <img src="img/foot logo.png" alt="foot LOGO">
+            </p>
+            <p>
+                <a href="mailto:romandyou@romand.co.kr">
+                    <img src="img/marketing.png" alt="marketing">
+                </a>
+            </p>
+            <p>
+                <a href="mailto:export@romand.co.kr">
+                    <img src="img/rmd_footer_store.jpg" alt="store">
+                </a>
+            </p>
+            <p>
+                <a href="https://romand.co.kr/board/gallery/list.html?board_no=25">
+                    <img src="img/rmd_footer_benefit.jpg" alt="benefit">
+                </a>
+            </p>
+            <p>
+                <a href="https://romand.co.kr/product/project.html?cate_no=80">
+                    <img src="img/global_expert.png" alt="global">
+                </a>
+            </p>
+
+        </div>
+        <div class="pcfoot2">
+            <div class="pcfoot2_1">
+                <ul class="foot_left">
+                    <li>
+                        <a href="#">
+                            <img src="img/foot1.jpg" alt="foot logo">
+                        </a>
+                    </li>
+                    <ul class="foot_sns cf">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC2uKY1XseEBI5Gorsy2DRZg"><img src="img/sns y.png"
+                                    alt="youtube"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/romandyou/"><img src="img/sns i.jpg" alt="instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/romandyou"><img src="img/sns b.jpg" alt="blog"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/romandyou"><img src="img/sns f.jpg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://pf.kakao.com/_RzWSu"><img src="img/sns k.jpg" alt="kakao"></a>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="foot_right">
+                    <p class="txt4">(주)아이패밀리SC</p>
+                    <span>서울특별시 송파구 동남로 122(문정동)COLLECTED 빌딩 Tel : 02. 1670. 2238 <br>통신판매신고번호 : 제2022-서울송파-1690호 대표자 :
+                        김태욱,김성현</span>
+                    <ul>
+                        <li><a href="javascript:void(0)">개인정보보호정책</a></li>
+                        <li><a href="javascript:void(0)">이용약관동의</a></li>
+                    </ul>
+                    <span>© 2017 IFAMILY SC, CO.,LTD.ALL Right Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
